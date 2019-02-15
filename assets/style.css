@@ -1,0 +1,12 @@
+.background{
+  background: url(photos/galaxy.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card-text {
+  color: white;
+  text-shadow: 1px 1px black;
+}
