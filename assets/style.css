@@ -1,12 +1,39 @@
 .background{
-  background: url(photos/galaxy.jpeg);
+  background: url(photos/starry-sky.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.card-text {
+.title-text {
   color: white;
   text-shadow: 1px 1px black;
+  padding-top: 200px;
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 80px;
+  
+}
+
+.form-style {
+  padding-top: 200px;
+}
+
+.btn-dark {
+  background-color: #00000013
+}
+
+.card-text {
+    color: white;
+  text-shadow: 1px 1px black;
+  font-weight: bold;
+}
+
+.card-h {
+  min-height: 250px;
+  max-height: 350px;
+}
+
+.card-body{
+  
 }

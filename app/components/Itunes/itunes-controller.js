@@ -2,6 +2,8 @@ import ItunesService from "./itunes-service.js";
 //Private
 const itunesService = new ItunesService()
 
+
+
 function drawSongs() {
   //changes button back to GET MUSIC once songs are loaded
   document.querySelector('#get-music-button').textContent = 'GET MUSIC'
@@ -13,7 +15,11 @@ function drawSongs() {
     template += song.getTemplate()
   });
   document.getElementById('songs').innerHTML = template
+
+
 }
+
+
 
 
 //PUBLIC

@@ -7,31 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Is Fun!</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 
 </head>
 
-<body class="containter-fluid background">
+<body class="container-fluid background">
     <section class="row">
         <div class="col text-center pt-5">
-            <h1 class="card-text">Your World is how you percieve it</h1>
+            <h1 class="title-text">Your World is how you Percieve it</h1>
         </div>
     </section>
-    <section class="row">
-        <div class="col">
+    <section class="row form-style">
+        <div class="col d-flex justify-content-center">
             <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
                 <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
                 <div class="form-group">
                     <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-                    <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+                    <button type="submit" class="text-center btn btn-dark" id="get-music-button">Get Music</button>
                 </div>
             </form>
         </div>
     </section>
-    <section class="row">
-        <div class="col-3" id="songs">
+    <section class="row d-flex justify-content-center pt-5" id="songs">
 
-        </div>
+
+
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="module" src="app/main.js"></script>
