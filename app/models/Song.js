@@ -11,19 +11,19 @@ export default class Song {
     getTemplate() {
         return `
         <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card h-100 background">
+        <div class="card c-background">
             <img src="${this.albumArt}" class="card-img-top card-h" alt="...">
-            <div class="card-body card-text vh100">
+            <div class="card-body d-flex flex-column card-text vh100">
+            <audio controls class="justify-self-end card-footer">
+                <source src="${this.preview}" type="audio/ogg">                    
+                Your browser does not support the audio element.
+            </audio>
                 <h3>Title: ${this.title}</h3>
                 <p>Album: ${this.collection}</p>
                 <p>Artist: ${this.artist}</p>
                 <p>Price: ${this.price}</p>
-                <div class="card-footer">
-                <audio controls>
-                    <source src="${this.preview}" type="audio/ogg">                    
-                    Your browser does not support the audio element.
-                </audio>
-                </div>
+                
+                
             </div>
         </div>
         </div>

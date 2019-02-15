@@ -30,10 +30,18 @@
 }
 
 .card-h {
-  min-height: 250px;
+  min-height: 350px;
   max-height: 350px;
 }
 
 .card-body{
   
+}
+
+.c-background{
+  background: url(${this.albumArt});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
