@@ -14,16 +14,14 @@ export default class Song {
         <div class="card c-background">
             <img src="${this.albumArt}" class="card-img-top card-h" alt="...">
             <div class="card-body d-flex flex-column card-text vh100">
-            <audio controls class="justify-self-end card-footer">
+            <audio controls class="justify-self-end audio-display" id="pause">
                 <source src="${this.preview}" type="audio/ogg">                    
                 Your browser does not support the audio element.
-            </audio>
-                <h3>Title: ${this.title}</h3>
+            </audio>            
+                <h3>Title: ${this.title}</h3>                
                 <p>Album: ${this.collection}</p>
                 <p>Artist: ${this.artist}</p>
-                <p>Price: ${this.price}</p>
-                
-                
+                <p>Price: ${this.price}</p>                
             </div>
         </div>
         </div>

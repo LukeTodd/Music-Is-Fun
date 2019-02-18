@@ -9,15 +9,15 @@ function drawSongs() {
   document.querySelector('#get-music-button').textContent = 'GET MUSIC'
   console.log(itunesService.Songs)
 
+
   let songs = itunesService.Songs
   let template = ''
   songs.forEach(song => {
     template += song.getTemplate()
   });
   document.getElementById('songs').innerHTML = template
-
-
 }
+
 
 
 

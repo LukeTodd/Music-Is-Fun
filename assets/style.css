@@ -45,3 +45,8 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+.audio-display {
+  display: block;
+ 
+}
