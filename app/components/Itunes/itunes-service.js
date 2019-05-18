@@ -25,6 +25,7 @@ class ItunesService {
     // @ts-ignore
     $.getJSON(url)
       .then(res => {
+        debugger
         let results = res.results.map(s => new Song(s))
         setState('songs', results)
       })
